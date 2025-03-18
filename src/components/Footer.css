@@ -1,0 +1,159 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container {
+  width: 100%;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  z-index: 0.5;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1700px;
+  margin-top: 5vh;
+  padding: 0 2%;
+  flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(16px, 2vw, 20px);
+  min-width: 150px;
+}
+
+.footer-title {
+  font-size: clamp(30px, 10vw, 300px);
+  font-weight: bold;
+  margin: 2vh 0;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-bottom: 70px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 5%;
+  box-sizing: border-box;
+}
+
+.footer-icons {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  text-align: right;
+  padding: 1rem 5%;
+  box-sizing: border-box;
+  z-index: 9999;
+  border-top: 1px solid white;
+}
+
+.text {
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: clamp(14px, 2.5vw, 25px);
+}
+
+.footer-icon {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  margin-left: auto;
+}
+
+.footer-icon a {
+  color: white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.footer-icon a:hover {
+  transform: scale(1.2);
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .footer-title {
+    margin-bottom: 75px;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer-title {
+    margin-bottom: 90px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem 5%;
+  }
+
+  .footer-icons {
+    padding: 0.5rem 2%;
+  }
+  
+  .footer-icon {
+    gap: 10px;
+  }
+
+  .text {
+    margin-top: 0.5rem;
+    font-size: clamp(12px, 2vw, 18px);
+  }
+  
+  .footer-container {
+    min-height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .footer-container {
+    width: 100%;
+  }
+  .footer-icon {
+    margin-right: 20px;
+  }
+  .footer-title {
+    margin-bottom: 110px;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 355px) {
+  .footer-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 345px) {
+  .footer-container {
+    width: 100%;
+  }
+}
